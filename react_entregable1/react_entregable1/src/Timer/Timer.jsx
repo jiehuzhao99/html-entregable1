@@ -5,10 +5,13 @@ import { Button } from 'antd'
 import { useState } from 'react';
 
 const Timer = () => {
-    const [second, setSecond] = useState(0);
+    // const [second, setSecond] = useState(0);
 
     return ( 
-        <Button type="primary">Start timer</Button>
+        <div>
+            <p>this is the start of the timer</p>
+            <Button type="primary">Start timer</Button>
+        </div>
      );
 }
  
