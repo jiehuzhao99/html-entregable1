@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button styles to match snapshot 1`] = `
+<button
+  className="sc-bgqQcB jqwEdI"
+>
+  Default
+</button>
+`;
+
+exports[`Button styles to match snapshot 2`] = `
+<button
+  className="sc-bgqQcB sc-gTRrQi jqwEdI hObsJv"
+>
+  Success
+</button>
+`;
+
+exports[`Button styles to match snapshot 3`] = `
+<button
+  className="sc-bgqQcB sc-ewnqHT jqwEdI ebpYmZ"
+>
+  Error
+</button>
+`;
+
+exports[`Button styles to match snapshot 4`] = `
+<button
+  className="sc-bgqQcB sc-fFGjHI jqwEdI iimDYr"
+>
+  Warning
+</button>
+`;
+
+exports[`Button styles to match snapshot 5`] = `
+<button
+  className="sc-bgqQcB sc-dicizt jqwEdI brDaxQ"
+>
+  Info
+</button>
+`;
