@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Crowdfundme - Tarea Entregable 1 HTML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <script src="./js/index.js"></script>
+    </head>
+    <body>
+        <div class="shadow" id="modal-shadow">
+            <div class="nav">
+                <!-- <img src="" alt="logo" class="nav-link" /> -->
+                <div class="c-navlinks">
+                    <a href="/index.html" class="nav-link logo">CRWDFM</a>
+                    <a href="#explore" class="nav-link">Explore</a>
+                    <a href="#search" class="nav-link">Search</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#start" class="nav-link">Start a Campaign</a>
+                </div>
+                <div class="c-login">
+                    <a href="#login" class="nav-link">Login</a>
+                    <a href="#signup" class="nav-link">Sign Up</a>
+                </div>
+            </div>
+            <div class="c-campaign">
+                <div class="c-img-details">
+                    <div class="c-img">
+                    </div>
+                    <div class="c-creator">
+                        <div class="c-avatar-contact">
+                            <div class="c-avatar-details">
+                                <div class="avatar"></div>
+                                <div class="c-user-details">
+                                    <p class="username">The Butterfly Project</p>
+                                    <p class="user-details">5 campaigns | Amsterdam, Netherlands</p>
+                                </div>
+                            </div>
+                            <div class="c-contact">
+                                <i class="fa fa-solid fa-envelope fa-lg contact-icon"></i>
+                                <i class="fa fa-solid fa-phone fa-lg contact-icon"></i>
+                                <i class="fa fa-brands fa-instagram fa-lg contact-icon"></i>
+                                <i class="fa fa-brands fa-facebook fa-lg contact-icon"></i>
+                            </div>
+                        </div>
+                        <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab amet debitis autem dicta libero necessitatibus beatae voluptatem adipisci repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime pariatur sequi ducimus ea quidem molestias. Atque in iste ipsum fugit reprehenderit. Ipsam dolorem explicabo perferendis! Repellendus veniam in laboriosam repellat.</p>
+                    </div>
+                    <hr>
+                    <h2 class="project-details-title">Fun Activities in Schools by the Butterfly Project</h2>
+                    <div class="c-project-details">
+                        <div class="school-img"></div>
+                        <div class="c-project-description">
+                            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At laudantium iste, dolorem temporibus sit sed natus animi? Odit voluptates ad dolorum, atque maiores, perferendis enim rerum sapiente, vel similique cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa incidunt reprehenderit, debitis cupiditate doloribus numquam, ducimus dicta amet, cumque explicabo eos sequi. Harum cum nesciunt molestiae a adipisci dolorum illo.</p>
+                        </div>
+                        <div class="children-img"></div>
+                    </div>
+                </div>
+                    <div class="c-info">
+                        <p class="category-title">FUNDING</p>
+                        <h1 class="campaign-title">The Butterfly Project Fundraiser</h1>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab amet debitis autem dicta libero necessitatibus beatae voluptatem adipisci repellendus.</p>
+                        <div class="c-amount-days">
+                            <h2><span>$</span><span id="amount-so-far">4976</span> <span class="currency">USD of $<span id="goal">15,000</span></span></h2>
+                            <h4 id="days-left">37 days left</h4>
+                        </div>
+                        <!-- <div class="background-bar">
+                            <div class="progress-bar"></div>
+                            <progress class="progress-bar" id="progress" value="4976" max="15000"></progress>
+                        </div> -->
+                        <progress class="progress-bar" id="progress" value="4976" max="15000"></progress>
+                        <div class="c-donations-closing-date">
+                            <p class="small-text"><span id="donations">107</span> donations</p>
+                            <p class="small-text">Closes on 12/3/2023</p>
+                        </div>
+                        <div class="c-donate-input">
+                            <div class="c-input">
+                                <label for="quantity">Make a donation</label>
+                                <input class="input-style donate-input" name="quantity" id="quantity" placeholder="Quantity" type="text" value=""/>
+                            </div>
+                            <select class="input-style currency-select" name="currency" id="currency">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="GBP">GBP</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RMB">RMB</option>
+                                <option value="KRW">KRW</option>
+                                <option value="TRY">TRY</option>
+                                <option value="DKK">DKK</option>
+                                <option value="JPY">JPY</option>
+                                <option value="VND">VND</option>
+                            </select>
+                        </div>
+                        <div class="c-share-review">
+                            <textarea class="review input-style" placeholder="Share your thoughts..."></textarea>
+                            <!-- <div class="button donate">Donate</div>
+                            <div class="button share">Share</div> -->
+                        </div>
+                        <div class="c-buttons">
+                            <div class="button share">Share</div>
+                            <div class="button donate" onclick="openModal()">Donate</div>
+                        </div>
+                        <div class="last-donations">
+                            <h3 class="subtitle">Last Donations</h3>
+
+                            <div class="c-donation" id="donation-1">
+                                <div class="c-avatar-details">
+                                    <div class="avatar"></div>
+                                    <div class="c-user-details">
+                                        <p class="username">Adam Smith</p>
+                                        <p class="user-details">2 days ago</p>
+                                        <p class="comment">"Fantastic project!"</p>
+                                    </div>
+                                </div>
+                                <p class="quantity">$25 <span class="currency">USD</span></p>
+                            </div>
+                            <hr>
+
+                            <div class="c-donation" id="donation-2">
+                                <div class="c-avatar-details">
+                                    <div class="avatar"></div>
+                                    <div class="c-user-details">
+                                        <p class="username">Laura Garcia</p>
+                                        <p class="user-details">7 days ago</p>
+                                        <p class="comment">"Good luck in all your endeavors!"</p>
+                                    </div>
+                                </div>
+                                <p class="quantity">€40 <span class="currency">EUR</span></p>
+                            </div>
+                            <hr>
+
+                            <div class="c-donation" id="donation-3">
+                                <div class="c-avatar-details">
+                                    <div class="avatar"></div>
+                                    <div class="c-user-details">
+                                        <p class="username">Min Park</p>
+                                        <p class="user-details">13 days ago</p>
+                                        <p class="comment">"Wishing you the best!"</p>
+                                    </div>
+                                </div>
+                                <p class="quantity">₩15,000 <span class="currency">KRW</span></p>
+                            </div>
+
+                            <div class="c-see-all" id="see-all-donations">
+                                <a class="see-all"><i class="fa fa-solid fa-chevron-down"></i> See all donations</a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+    
+            </div>
+            <div class="footer">
+                <div class="c-footer-links">
+                    <div class="c-footer">
+                        <p class="footer-title">ABOUT US</p>
+                        <a class="footer-text">About us</p>
+                        <a class="footer-text">Our Story</p>
+                        <a class="footer-text">Statistics</p>
+                        <a class="footer-text">Press</p>
+                        <a class="footer-text">Work With Us</p>
+                    </div>
+                    <div class="c-footer">
+                        <p class="footer-title">CUSTOMER SUPPORT</p>
+                        <a class="footer-text">Help Center</p>
+                        <a class="footer-text">Our policies</p>
+                        <a class="footer-text">Creator Resources</p>
+                        <a class="footer-text">Forward Funds</p>
+                        <a class="footer-text">Brand Resources</p>
+                    </div>
+                    <div class="c-footer">
+                        <p class="footer-title">MORE FROM CRWDFM</p>
+                        <a class="footer-text">Newsletter</p>
+                        <a class="footer-text">Project Updates</p>
+                        <a class="footer-text">The Creative Independent</p>
+                        <a class="footer-text">Mobile App</p>
+                        <a class="footer-text">Research</p>
+                    </div>
+                </div>
+                <div class="c-copyright-social">
+                    <div class="c-copyright">
+                        <p class="logo white">CRWDFM <span>© 2023</span></p>
+                    </div>
+                    <div class="c-footer-contact">
+                        <i class="fa fa-solid fa-envelope fa-lg contact-icon"></i>
+                        <i class="fa fa-solid fa-phone fa-lg contact-icon"></i>
+                        <i class="fa fa-brands fa-instagram fa-lg contact-icon"></i>
+                        <i class="fa fa-brands fa-facebook fa-lg contact-icon"></i>
+                    </div>
+                </div>
+                <div class="c-legal">
+                    <p class="footer-text">Trust & Safety</p>
+                    <p class="footer-text">Terms of Use</p>
+                    <p class="footer-text">Cookie Policy</p>
+                    <p class="footer-text">Do Not Sell My Personal Information</p>
+                    <p class="footer-text">Accessibility</p>
+                    <p class="footer-text">CA Notice of Consent</p>
+                </div>
+            </div>
+        </div>
+        <div id="donation-form" class="donation-form">
+            <form action="" class="c-form">
+                <label for="quantity">Confirm Quantity</label>
+                <input class="input-style donate-input" name="quantity" id="modal-quantity" placeholder="Quantity" type="text" value=""/>
+                <label for="name">Your Name</label>
+                <input class="input-style donate-input" placeholder="Your Name" name="name" id="name" />
+                <label for="comment">Leave a comment:</label>
+                <textarea class="input-style review" id="comment"></textarea>
+                <div class="c-buttons">
+                    <div class="button share" onclick="closeModal()">Cancel</div>
+                    <div class="button donate" onclick="updateState()">Donate</div>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="c-donation-to-add">
+            <div class="c-avatar-details">
+                <div class="avatar"></div>
+                <div class="c-user-details">
+                    <p class="username">Laura Garcia</p>
+                    <p class="user-details">7 days ago</p>
+                    <p class="comment">"Good luck in all your endeavors!"</p>
+                </div>
+            </div>
+            <p class="quantity">€40 <span class="currency">EUR</span></p>
+        </div>
+        <hr> -->
+    </body>
+</html>

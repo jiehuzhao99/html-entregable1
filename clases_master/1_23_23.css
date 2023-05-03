@@ -1,0 +1,32 @@
+.main, .side {
+    container-type: inline-size;
+}
+
+.caja{
+    height: 100px;
+
+    /* min-width: 300px;
+    width: 100px;
+    max-width: 800px; */
+
+    background-color: blue;
+
+    /* equivalente a tener un min y max width */
+    /* mejor que porcentajes */
+    width: clamp(300px, 50%, 800px);
+    margin: clamp(100px, 10%, 100px);
+}
+
+.caja2{
+    height: 200px;
+    background-color: red;
+    width: calc(300px - 10%);
+}
+
+/* body{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+} */
