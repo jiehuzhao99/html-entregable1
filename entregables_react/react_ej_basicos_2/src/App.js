@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
 
+// local components
+import Greeting from './Greeting/Greeting';
+import ShowName from './ShowName/ShowName';
+import ShowDate from './ShowDate/ShowDate';
+import ShowMessage from './ShowMessage/ShowMessage';
+import Loading from './Loading/Loading';
+import Button from './Button/Button';
+import Inputs from './Inputs/Inputs';
+import Counter from './Counter/Counter';
+import StringCounter from './StringCounter/StringCounter';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greeting />
+      <ShowName />
+      <ShowDate />
+      <ShowMessage />
+      <Loading show={true} />
+      <Button buttonFunction={() => console.log("holi")} />
+      <Inputs />
+      <Counter />
+      <StringCounter />
     </div>
   );
 }
